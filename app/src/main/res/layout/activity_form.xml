@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#d4d4d4"
+        android:hint="Tarih Seciniz"
+        android:padding="15dp"
+        android:textColor="#897"
+        android:textColorHint="#090"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="150dp"/>
+
+    <Button
+        android:id="@+id/btn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="formu onayla"
+        android:textStyle="bold"
+        android:textColorHint="#090"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="25dp"
+        />
+
+
+</LinearLayout>
