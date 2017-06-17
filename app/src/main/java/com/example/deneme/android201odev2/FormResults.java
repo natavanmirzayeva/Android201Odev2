@@ -30,12 +30,18 @@ public class FormResults extends AppCompatActivity{
 
         FormBilgileri bilgi = (FormBilgileri) getIntent().getSerializableExtra("formBilgileri");
 
-
-
-
         formm = new ArrayList<String>();
-        formm.add(bilgi.getName());
-       ListView listemizz=(ListView) findViewById(R.id.listView1);
+       // formm.add(bilgi.getName()+" "+bilgi.getSurname()+" "+bilgi.getDate());
+                  ListView listemizz=(ListView) findViewById(R.id.listView1);
+
+        Bilgiler b = new Bilgiler();
+
+        b.getKullaniciBilgileri().add(bilgi.getName()+" "+bilgi.getSurname()+" "+bilgi.getDate());
+        for(int i=0;i<b.getKullaniciBilgileri().size();i++)
+        {
+            formm.add(b.getKullaniciBilgileri().get(i)); //kullanicibilgileri listesinin icindeki verileri
+                                                        // formm listesine eklenmistir
+        }
 
 
         ArrayAdapter<String> veriAdaptoru2=new ArrayAdapter<String>

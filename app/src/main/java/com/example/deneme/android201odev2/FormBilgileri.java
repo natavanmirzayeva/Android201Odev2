@@ -12,6 +12,11 @@ public class FormBilgileri implements Serializable {
     String surname;
     String date;
 
+    public FormBilgileri() {
+
+    }
+
+
     public String getName() {
         return name;
     }
@@ -43,4 +48,7 @@ public class FormBilgileri implements Serializable {
         this.date = date;
 
     }
+
+
+
 }

@@ -74,7 +74,7 @@ public class FormAcrivity extends AppCompatActivity
             public void onClick(View view) {
 
                 formBilgileri = new FormBilgileri(name.getText().toString(),surname.getText().toString(),dt.getText().toString());
-                intent3 = new Intent(view.getContext(),FormResults.class);
+                intent3 = new Intent(view.getContext(),Bilgiler.class);
                 intent3.putExtra("formBilgileri",  formBilgileri);
                 startActivity(intent3);
 
